@@ -1,5 +1,10 @@
-/* Put your styles (or personal collection of CSS frameworks) here */
+@import "variables";
 
+//import bootstrap from node_modules
+@import "~bootstrap/scss/bootstrap";
+
+
+// remove this in a minimal
 body {
   max-width: 800px;
   margin-right: auto;

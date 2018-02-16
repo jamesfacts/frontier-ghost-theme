@@ -1,34 +1,46 @@
 {
-  "name": "undefined",
-  "description": "A minimal starter theme for the Ghost blogging platform",
-  "demo": "http://github.com/curiositry/undefined-ghost-theme",
-  "version": "1.0.3",
-  "engines": {
-      "ghost": ">=1.17.3"
-  },
-  "author": {
-      "name": "Curiositry",
-      "email": "isa@automathic.org",
-      "url": "http://curiositry.com"
-  },
-  "config": {
-      "posts_per_page": 5
-  },
-  "gpm": {
-      "type": "theme",
-      "categories": [
-          "Minimal",
-          "Responsive",
-          "Starter theme",
-          "Boilerplate",
-          "Typographic"
-      ]
-  },
-  "keywords": [
-      "responsive",
-      "ghost",
-      "starter",
-      "theme",
-      "boilerplate"
-  ]
+    "name": "Frontier",
+    "description": "A minimal starter theme for the Ghost blogging platform, bundled with Webpack and Browser Sync.",
+    "demo": "http://github.com/curiositry/undefined-ghost-theme",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=1.17.3",
+        "node": ">= 6.9.0"
+    },
+    "author": {
+        "name": "Curiositry",
+        "email": "isa@automathic.org",
+        "url": "http://curiositry.com"
+    },
+    "config": {
+        "posts_per_page": 5
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Responsive",
+            "Starter theme",
+            "Boilerplate",
+            "Typographic"
+        ]
+    },
+    "keywords": [
+        "responsive",
+        "ghost",
+        "starter",
+        "theme",
+        "boilerplate"
+    ],
+    "dependencies": {
+        "bootstrap": "4.0.0",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.12.9"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.23.6",
+        "node-sass": "^4.7.2",
+        "sass-loader": "^6.0.6",
+        "webpack": "^3.11.0"
+    }
 }
