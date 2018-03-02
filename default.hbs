@@ -12,7 +12,7 @@
   <title>{{meta_title}}{{#is "post, page"}} — {{@blog.title}}{{/is}}</title>
 
   {{! Styles }}
-  <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "styles/main.css"}}" />
 
   {{! Ghost outputs important stuff with this tag }}
   {{ghost_head}}
@@ -27,6 +27,6 @@
 
   {{! Ghost outputs important scripts with this, including the the content for the code injection pane }}
   {{ghost_foot}}
-
+  <script type="text/javascript" src="{{asset "scripts/main.js"}}"></script>
 </body>
 </html>
