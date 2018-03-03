@@ -7,6 +7,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 
+
 let webpackConfig = {
   // go down a step to reach assets
   context: path.resolve(__dirname, '../'),
@@ -37,7 +38,6 @@ let webpackConfig = {
       },
       {
         test: /\.(css|scss|sass)$/,
-
         use: ExtractTextPlugin.extract({
           use: [
             {
@@ -62,6 +62,30 @@ let webpackConfig = {
           ],
           fallback: 'style-loader'
         })
+      },
+      {
+        test: /\.(jpg|png|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: './img/'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: './fonts/'
+            }
+          }
+        ]
       }
     ]
   },

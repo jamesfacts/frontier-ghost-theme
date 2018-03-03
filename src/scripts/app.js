@@ -1,13 +1,10 @@
-(() => {
-	'use strict';
+// JS goes here
 
-	// create wrapper arrow function expression of console.log
-	var log = message => console.log(message);
+// Here, we're requiring all images inside JS in order to use the webpack
+// fileloader even on images that are not otherwise required in js
 
-	log('Testing out arrow functions!');
+function importAll(r) {
+  return r.keys().map(r);
+}
 
-	// instead of specifying a traditional anonymous function
-	// expression to map we can use an arrow function
-	log([1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(value => value * value));
-
-}) ();
+const images = importAll(require.context('../img/', false, /\.(png|gif|jpe?g|svg)$/));
