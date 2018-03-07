@@ -1,0 +1,15 @@
+body {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.5;
+  background-color: $bgcolor;
+}
+
+img {
+  max-width: 100%;
+}
+
+.inline-block {
+  display: inline-block;
+}

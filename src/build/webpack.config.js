@@ -95,10 +95,15 @@ let webpackConfig = {
     new ExtractTextPlugin({
       filename: 'styles/[name].css',
       allChunks: true
+    }),
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3000,
+      proxy: 'http://localhost:2368'
     })
   ],
 
-  devtool: 'inline-source-map'
+  devtool: 'source-map'
 }
 
 module.exports = webpackConfig;
