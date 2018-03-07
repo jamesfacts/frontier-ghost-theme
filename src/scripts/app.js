@@ -1,3 +1,8 @@
+/** import external dependencies */
+import $ from 'jquery';
+import 'bootstrap';
+
+
 // JS goes here
 
 // Here, we're requiring all images inside JS in order to use the webpack

@@ -7,6 +7,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 
+// warning in output "Entrypoint undefined = extract-text-webpack-plugin-output-filename"
+// see here: https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/731
+
 
 let webpackConfig = {
   // go down a step to reach assets
