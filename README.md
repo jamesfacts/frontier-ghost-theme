@@ -33,7 +33,11 @@ Getting started building on Undefined is as easy as one, two.
 git clone https://github.com/curiositry/undefined-ghost-theme.git
 ```
 
-- { 2 }: **Add your custom styles.** Open up main.css and add your styles. Or, fire up your CSS pre- or post-processor of choice and replace `main.css` with your compiled stylesheet.
+-2: **NPM install**
+
+-3: **NPM dev**
+
+-4: **NPM build**
 
 ## Screenshot
 

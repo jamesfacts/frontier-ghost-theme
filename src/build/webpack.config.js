@@ -99,11 +99,24 @@ let webpackConfig = {
       filename: 'styles/[name].css',
       allChunks: true
     }),
-    new BrowserSyncPlugin({
-      host: 'localhost',
-      port: 3000,
-      proxy: 'http://localhost:2368'
-    })
+    new BrowserSyncPlugin(
+      {
+        host: 'localhost',
+        port: 3000,
+        proxy: 'http://localhost:2368',
+        files: [
+          {
+            match: [
+              '**/*.hbs',
+              './src/*.*'
+            ]
+          }
+        ]
+      },
+      {
+        reload: true
+      }
+    )
   ],
 
   devtool: 'source-map'
