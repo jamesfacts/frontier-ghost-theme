@@ -3,13 +3,13 @@
 Frontier — A Ghost starter theme with Webpack and Bootstrap
 ======================================================
 
-**This starter theme is intended as a blank slate for developers working on custom Ghost themes. Based on a fork of the lovely [Undefined] (https://github.com/curiositry/undefined-ghost-theme) from [Curiositry](https://github.com/curiositry). (Check out their other Ghost themes!) I'm also inspired by the excellent [Sage starter theme](https://github.com/roots/sage) for Wordpress.**
+**This starter theme is intended as a blank slate for developers working on custom Ghost themes. Based on a fork of the lovely [Undefined](https://github.com/curiositry/undefined-ghost-theme) from [Curiositry](https://github.com/curiositry). (Check out their other Ghost themes!) I'm also inspired by the excellent [Sage starter theme](https://github.com/roots/sage) for Wordpress.**
 
 ## Features
 
 - **Bootstrap 4** ...along with jQuery and Popper.js for full BS4 functionality.
 
-- **Webpack & BrowserSync**  Check the `build` folder for config, but in a nutshell CSS is run through postcss, js is run through Babel, and fonts and images are moved to the assets folder without any processing. Webpack doesn't touch .hbs templates.
+- **Webpack 4 & BrowserSync 2**  Check the `build` folder for config, but in a nutshell CSS is run through postcss, js is run through Babel, and fonts and images are moved to the assets folder without any processing. Webpack doesn't touch .hbs templates.
 
 - **Ghost v1 Compatible** Tested in several versions of Ghost ^1.0.0.
 
