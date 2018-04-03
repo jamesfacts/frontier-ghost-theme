@@ -1,46 +1,26 @@
 ![Ghost Compatability](http://img.shields.io/badge/Compatible%20with%20Ghost-v1%20+-brightgreen.svg) ![Ghost Compatability](http://img.shields.io/badge/Compatible%20with%20Ghost%20LTS-v0.11.11%20+-brightgreen.svg)
 
-Undefined — A starting point for Ghost theme developers
+Frontier — A Ghost starter theme with Webpack and Bootstrap
 ======================================================
 
-**This starter theme has everything you need to get started making themes for the Ghost blogging platform.**
-
-*Looking for a nice theme that’s ready to go? Check out my other themes, [Mnml](http://github.com/curiositry/mnml-ghost-theme) (free) and [Laminim](https://creativemarket.com/Curiositry/1037280-Laminim-%E2%80%94-Ghost-Theme-for-Bloggers) (premium).*
+**This starter theme is intended as a blank slate for developers working on custom Ghost themes. Based on a fork of the lovely [Undefined] (https://github.com/curiositry/undefined-ghost-theme) from [Curiositry](https://github.com/curiositry). (Check out their other Ghost themes!) I'm also inspired by the excellent [Sage starter theme](https://github.com/roots/sage) for Wordpress.**
 
 ## Features
 
-- **Bring your own CSS**. Front end developers are persnickety about their CSS frameworks: Some write everything from scratch, some roll their own framework that they use in all their projects (in my case, Sassify), and some use Bootstrap or Foundation or the current *framework-de-jour*. Undefined leaves all the styling to you: just drop your styles in `main.css` and you’re ready to go.
+- **Bootstrap 4** ...along with jQuery and Popper.js for full BS4 functionality.
 
-- **Responsive!** Because plain HTML is responsive *by default*.
+- **Webpack & BrowserSync**  Check the `build` folder for config, but in a nutshell CSS is run through postcss, js is run through Babel, and fonts and images are moved to the assets folder without any processing. Webpack doesn't touch .hbs templates.
 
-- **Ready for Ghost v1 and beyond.** With undefined as a starting point, your theme is ready for the future.
+- **Ghost v1 Compatible** Tested in several versions of Ghost ^1.0.0.
 
-- **Super modular.** Undefined makes use of handlebar partials to break things into neat, self-contained modules. Don’t want a subscribe form? Remove the `subscribe-widget` module without code-surgery.
-
-- **Ready-to-roll**. Everything you’d expect from a Ghost theme is built in: A homepage with post teasers, author pages, tag pages, navigation menu, subscribe form, metadata, and more. Free cars don’t often come with gas in tank and air in the tires!
-
-- **Smart defaults.** You can customize undefined in a thousand different ways, and it makes the job easier by being as close to neutral as possible. It’s like a dark grey suit — it’s not flashy, but it can go anywhere. You get a menu with a list of links, a little author bio below each post, reasonable metadata below the title. You get a footer with copyright date and theme attribution. You get all the files that Ghost requires (post page, index, etc) to run, plus all the files a blog needs to be complete (tag and author pages, etc). Nothing fancy, but very respectable.
-
-- **Cleanly coded and comprehensively commented**. The code is nice and clean, W3C valid, and scores "A" on Google pagespeed.
+- **Fully Templated** Frontier uses all the same template files as **Undefined**—A homepage with post teasers, author pages, tag pages, navigation menu, subscribe form, metadata... all the files needed in a blog, not just the minimum files needed to run Ghost.
 
 ## Getting started
 
-Getting started building on Undefined is as easy as one, two.
+- { 1 }: **Download / clone theme**
 
-- { 1 }: **Download this starter theme by [clicking here](https://github.com/curiositry/undefined-ghost-theme/archive/master.zip), or clone it with Git**:
+- { 2 }: **Install** Run `npm install`, this was configured using Node 6.9.0
 
-```
-git clone https://github.com/curiositry/undefined-ghost-theme.git
-```
+- { 3 }: **Dev** Run `npm run start` to open a BrowserSync session
 
--2: **NPM install**
-
--3: **NPM dev**
-
--4: **NPM build**
-
-## Screenshot
-
-Undefined is completely unstyled: no custom fonts, no fancy colours, no nothing. The beauty of undefined is in the code, not the design. But unstyled HTML has a rugged beauty of its own — in fact, to my eyes it looks *better* than many ~~of the digital junkyards piled high with CSS + JavaScript~~ “modern” websites!
-
-![Screenshot of "undefined" — a starter theme for Ghost](http://cdn.autodidacts.io/img/undefined/undefined-ghost-theme.png)
+- { 4 }: **Build** Two options here. Ideally, [configure a CI server to build theme assets](https://jamesfacts.com/building-a-continuous-integration-pipeline-for-your-ghost-theme/), or run `npm run build:prod` locally and upload `assets` dir with the standard issue Ghost theme files.
