@@ -1,1 +1,7 @@
-$bgcolor:     yellow;
+$bgcolor:     $light;
+
+@mixin justify-row() {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

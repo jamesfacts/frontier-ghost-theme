@@ -1,0 +1,23 @@
+.main-header {
+  margin-bottom: 2rem;
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item {
+    margin-bottom: 1rem;
+  }
+  .main-header__logo {
+    margin-top: 2rem;
+  }
+  .nav-container {
+    width: 100%;
+
+    .nav {
+      @include justify-row();
+    }
+  }
+
+}

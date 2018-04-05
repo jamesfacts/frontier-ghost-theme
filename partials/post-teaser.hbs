@@ -31,10 +31,12 @@
     </div>
 
     <footer class="post-teaser__meta">
-      Posted by {{author}} on
-      <time class="post-teaser__meta__date" datetime="{{date format='YYYY-MM-DD'}}">
-        {{date format="MMMM Do, YYYY"}}.
-      </time>
+      <span class="post-teaser__author">
+        Posted by {{author}} on
+        <time class="post-teaser__meta__date" datetime="{{date format='YYYY-MM-DD'}}">
+          {{date format="MMMM Do, YYYY"}}.
+        </time>
+      </span>
       {{#if tags}}
         <span class="post-teaser__meta__tags">
           <!-- #{{tags separator=", #"}} -->
@@ -44,4 +46,3 @@
     </footer>
  </div> <!-- end post-teaser__text-container -->
 </article>
-<br><br><br>

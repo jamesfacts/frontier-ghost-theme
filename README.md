@@ -3,7 +3,7 @@
 Frontier — A Ghost starter theme with Webpack and Bootstrap
 ======================================================
 
-**This starter theme is intended as a blank slate for developers working on custom Ghost themes. Based on a fork of the lovely [Undefined](https://github.com/curiositry/undefined-ghost-theme) from [Curiositry](https://github.com/curiositry). (Check out their other Ghost themes!) I'm also inspired by the excellent [Sage starter theme](https://github.com/roots/sage) for Wordpress.**
+**This starter theme is intended as a blank slate for developers working on custom Ghost themes. It includes Bootstrap 4, and a Webpack / BrowserSync configuration so you can get started developing in a modern front-end environment right away. Frontier is based on a fork of the lovely [Undefined](https://github.com/curiositry/undefined-ghost-theme) from [Curiositry](https://github.com/curiositry). (Check out their other Ghost themes!) I'm also inspired by the excellent [Sage starter theme](https://github.com/roots/sage) for Wordpress.**
 
 ## Features
 

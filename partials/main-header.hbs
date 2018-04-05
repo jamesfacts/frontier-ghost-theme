@@ -1,35 +1,35 @@
-<header class="main-header" id="main-header">
-<div class="container">
+<header class="main-header container" id="main-header">
+
   <section class="row">
     {{#if @blog.logo}}
 
-      <div class="main-header__logo">
+      <div class="main-header__logo item">
         <a href="{{@blog.url}}">
           <img src="{{@blog.logo}}" alt="{{@blog.title}} Logo" />
         </a>
       </div>
-      <div class="main-header__text-container">
+      <div class="main-header__text-container item">
 
     {{else}}
 
-      <div class="main-header__text-container">
+      <div class="main-header__text-container item">
         <h1 class="main-header__blog-title">
           <a href="{{@blog.url}}">{{@blog.title}}</a>
         </h1>
-        
+
     {{/if}}
 
-      <h3 class="main-header__blog-description">
+      <h3 class="main-header__blog-description item">
         {{@blog.description}}
       </h3>
     </div> <!-- end main-header__text-container -->
 
-      <nav>
+      <nav class="item nav-container">
 
           {{navigation}}
 
       </nav>
   </section>
 
-</div>
+
 </header>

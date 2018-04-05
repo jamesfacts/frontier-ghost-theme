@@ -7,8 +7,6 @@
     <img class="tag-info__image" src="{{tag.feature_image}}" alt="Image for {{tag.name}} tag" />
   {{/if}}
 
-  <br><br>
-
   <span class="tag-info__intro">Posts Tagged:</span>
   <h1 class="tag-info__name">{{tag.name}}</h1>
 
@@ -21,10 +19,8 @@
      </span>
   </span>
 
-  <br><br>
-
 </section>
 
-<main class="content">
+<main class="content container post-list">
     {{> "loop"}}
 </main>

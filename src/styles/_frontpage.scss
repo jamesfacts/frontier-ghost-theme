@@ -1,0 +1,14 @@
+.post-list {
+  margin-bottom: 6rem;
+
+  .post {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .post-teaser__title {
+    margin-top: 1rem;
+  }
+  .post-teaser__meta {
+    @include justify-row();
+  }
+}

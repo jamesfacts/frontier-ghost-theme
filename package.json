@@ -1,6 +1,6 @@
 {
   "name": "frontier",
-  "description": "A minimal starter theme for the Ghost blogging platform",
+  "description": "A minimal starter theme for the Ghost blogging platform, featuring Webpack, BroswerSync, and Bootstrap.",
   "demo": "xxxx",
   "version": "1.0.0",
   "licenses": [
@@ -21,7 +21,7 @@
   "scripts": {
     "build": "./node_modules/.bin/webpack --progress --config src/build/webpack.config.js",
     "build:prod": "./node_modules/.bin/webpack --progress -p --config src/build/webpack.config.js",
-    "start": "./node_modules/.bin/webpack --hide-modules --watch --config src/build/webpack.config.js"
+    "start": "./node_modules/.bin/webpack --hide-modules --watch --config src/build/webpack.config.js --mode development"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",

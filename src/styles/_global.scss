@@ -1,7 +1,4 @@
 body {
-  max-width: 800px;
-  margin-right: auto;
-  margin-left: auto;
   line-height: 1.5;
   background-color: $bgcolor;
 }
@@ -12,4 +9,30 @@ img {
 
 .inline-block {
   display: inline-block;
+}
+
+// overrides bootstrap default
+.container {
+  max-width: 800px;
+}
+
+.pagination {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @include justify-row();
+}
+
+.site-footer {
+  background-color: $dark;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+
+  a {
+    color: $yellow;
+  }
+  .site-footer__attribution {
+    @include justify-row();
+  }
 }
