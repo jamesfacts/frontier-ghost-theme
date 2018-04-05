@@ -1,7 +1,7 @@
 {
   "name": "frontier",
   "description": "A minimal starter theme for the Ghost blogging platform, featuring Webpack, BroswerSync, and Bootstrap.",
-  "demo": "xxxx",
+  "demo": "https://frontier.jamesfacts.com/",
   "version": "1.0.0",
   "licenses": [
     {
@@ -60,8 +60,7 @@
       "Minimal",
       "Responsive",
       "Starter theme",
-      "Boilerplate",
-      "Typographic"
+      "Boilerplate"
     ]
   },
   "keywords": [
@@ -69,7 +68,8 @@
     "ghost",
     "starter",
     "theme",
-    "boilerplate"
+    "boilerplate",
+    "bootstrap"
   ],
   "dependencies": {
     "bootstrap": "^4.0.0",

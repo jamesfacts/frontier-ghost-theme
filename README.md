@@ -9,7 +9,7 @@ Frontier — A Ghost starter theme with Webpack and Bootstrap
 
 - **Bootstrap 4** ...along with jQuery and Popper.js for full BS4 functionality.
 
-- **Webpack 4 & BrowserSync 2**  Check the `build` folder for config, but in a nutshell CSS is run through postcss, js is run through Babel, and fonts and images are moved to the assets folder without any processing. Webpack doesn't touch .hbs templates.
+- **Webpack 4 & BrowserSync 2**  Check the `build` directory for config, but in a nutshell: CSS is run through postcss, js is run through Babel, and fonts and images are moved to the assets folder without any processing. Webpack doesn't touch .hbs templates.
 
 - **Ghost v1 Compatible** Tested in several versions of Ghost ^1.0.0.
 
