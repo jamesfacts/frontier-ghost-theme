@@ -1,6 +1,6 @@
 {
   "name": "frontier",
-  "description": "A minimal starter theme for the Ghost blogging platform, featuring Webpack, BroswerSync, and Bootstrap.",
+  "description": "A minimal starter theme for the Ghost blogging platform, featuring Webpack, Browsersync, and Bootstrap.",
   "demo": "https://frontier.jamesfacts.com/",
   "version": "1.0.0",
   "licenses": [
