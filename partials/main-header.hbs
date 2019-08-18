@@ -1,11 +1,11 @@
 <header class="main-header container" id="main-header">
 
   <section class="row">
-    {{#if @blog.logo}}
+    {{#if @site.logo}}
 
       <div class="main-header__logo item">
-        <a href="{{@blog.url}}">
-          <img src="{{@blog.logo}}" alt="{{@blog.title}} Logo" />
+        <a href="{{@site.url}}">
+          <img src="{{@site.logo}}" alt="{{@site.title}} Logo" />
         </a>
       </div>
       <div class="main-header__text-container item">
@@ -14,13 +14,13 @@
 
       <div class="main-header__text-container item">
         <h1 class="main-header__blog-title">
-          <a href="{{@blog.url}}">{{@blog.title}}</a>
+          <a href="{{@site.url}}">{{@site.title}}</a>
         </h1>
 
     {{/if}}
 
       <h3 class="main-header__blog-description item">
-        {{@blog.description}}
+        {{@site.description}}
       </h3>
     </div> <!-- end main-header__text-container -->
 
