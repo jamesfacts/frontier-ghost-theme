@@ -2,16 +2,12 @@
   "name": "frontier",
   "description": "A minimal starter theme for the Ghost blogging platform, featuring Webpack, Browsersync, and Bootstrap.",
   "demo": "https://frontier.jamesfacts.com/",
+  "repository": "https://github.com/jamesfacts/frontier-ghost-theme",
   "version": "2.0.0",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
+  "license": "MIT",
   "engines": {
-    "ghost": ">=1.17.3",
-    "node": ">= 6.9.0"
+    "ghost": ">=2.29.0",
+    "node": ">=10.14.0"
   },
   "author": {
     "name": "James White",
@@ -31,8 +27,8 @@
     "browser-sync": "^2.23.6",
     "browser-sync-webpack-plugin": "^2.0.1",
     "clean-webpack-plugin": "^0.1.18",
-    "css-loader": "^0.28.10",
-    "cssnano": "^3.10.0",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
@@ -44,8 +40,8 @@
     "precss": "^3.1.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.2",
-    "webpack": "^4.0.1",
-    "webpack-cli": "^2.0.9"
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
   },
   "browserslist": [
     "> 5%",

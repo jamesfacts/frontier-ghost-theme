@@ -19,7 +19,7 @@ Frontier — A Ghost starter theme with Webpack and Bootstrap
 
 - { 1 }: **Download / clone theme**
 
-- { 2 }: **Install** Run `npm install`, this was configured using Node 6.9.0
+- { 2 }: **Install** Run `npm install`, this was configured using Node 10.14.0
 
 - { 3 }: **Dev** Run `npm run start` to open a BrowserSync session
 
