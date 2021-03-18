@@ -21,6 +21,8 @@ Frontier — A Ghost starter theme with Webpack and Bootstrap
 
 - { 2 }: **Install** Run `npm install`, this was configured using Node 10.14.0
 
-- { 3 }: **Dev** Run `npm run start` to open a BrowserSync session
+- { 3 } **Start ghost** `ghost.cmd start`
 
-- { 4 }: **Build** Two options here. Ideally, [configure a CI server to build theme assets](https://jamesfacts.com/building-a-continuous-integration-pipeline-for-your-ghost-theme/), or run `npm run build:prod` locally and upload `assets` dir with the standard issue Ghost theme files.
+- { 4 }: **Dev** Run `npm run start` to open a BrowserSync session. Your changes in the theme's .hbs or .css files will automatically be reloaded in the browser when you save a file.
+
+- { 3 }: **Build** Two options here. Ideally, [configure a CI server to build theme assets](https://jamesfacts.com/building-a-continuous-integration-pipeline-for-your-ghost-theme/), or run `npm run build:prod` locally and upload `assets` dir with the standard issue Ghost theme files.
